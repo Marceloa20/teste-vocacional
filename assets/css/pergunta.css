@@ -1,0 +1,49 @@
+:root {
+    --cor-azul-claro: #38B6FF;
+    --cor-verde-btn: #98B500;
+    --cor-cinza: #646464;
+}
+
+header {
+    background: var(--cor-azul-claro);
+}
+
+main section .cinza {
+    color: var(--cor-cinza);
+}
+
+.progress-color {
+    background-color: var(--cor-verde-btn);
+}
+
+form .form-inputs .input {
+    background-color: var(--cor-azul-claro);
+    padding: .7rem;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 150px !important;
+}
+
+.botoes button {
+    background-color: var(--cor-verde-btn);
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    width: 15rem;
+    transition-duration: .3s;
+    padding: .6rem;
+}
+
+.botoes button:hover {
+    background-color: #87a100;
+    color: #fff;
+}
+
