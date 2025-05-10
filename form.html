@@ -20,43 +20,45 @@
             
         <section class="container-fluid">
             <div class="progress col-10 offset-1 mt-4" role="progressbar" aria-label="Animated striped example" aria-valuenow="14" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar progress-bar-striped progress-bar-animated progress-color" style="width: 14%">14%</div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated progress-color" style="width: 100%">100%</div>
                 </div>
         </section>
             
         <section class="container col-11 offset-1">
-            <h5 class="mt-4 fs-6 text-secondary fw-normal">Pergunta 02/16</h5>
-            <h3 class="mt-2 fs-4 mb-5 cinza">Se você fosse reformar o seu quarto, quem você seria?</h3>
+            <h5 class="mt-4 fs-6 text-secondary fw-normal">Resultado</h5>
+            <h3 class="mt-2 fs-4 mb-5 cinza">Preencha seus dados para receber o resultado.</h3>
         </section>
     </header>
 
     <main class="container-fluid">
         <section class="row">
-            <form class="col-10 offset-1 col-lg-4 offset-lg-1">
+            <form id="formulario" class="col-10 offset-1 col-lg-4 offset-lg-1">
                 <div class="input mb-2">
-                        <input type="radio" name="perguntas" id="arquiteto"> Arquiteto
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" required>
                 </div>
 
                 <div class="input mb-2">
-                        <input type="radio" name="perguntas" id="pedreiro"> Pedreiro
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" name="telefone" id="telefone" required>
                 </div>
 
                 <div class="input mb-2">
-                        <input type="radio" name="perguntas" id="pintor"> Pintor
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" required>
                 </div>
             </form>
 
             <div id="image" class="col-10 offset-1 col-lg-5 offset-lg-0">
-                <img src="imagens/perguntas/capa-pergunta-dois.png" alt="Mulher e homem segurando um balde de tinta" class="w-100">
+                <img src="imagens/perguntas/capa-envio-dos-dados.png" alt="Monitor, notebook, tablet e celular." class="w-100">
             </div>
             
             <div class="botoes">
-                <a href="pergunta1.html">
+                <a href="pergunta.html">
                     <button>Voltar</button>
                 </a>
-
-                <a href="form.html">
-                    <button>Avançar</button>
+                <a href="#">
+                    <button>Enviar</button>
                 </a>
             </div>
         </section>

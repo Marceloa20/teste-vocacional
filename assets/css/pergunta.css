@@ -4,46 +4,103 @@
     --cor-cinza: #646464;
 }
 
-header {
+.bg-azul-app {
     background: var(--cor-azul-claro);
-}
+    }
+
+    .progress-color {
+        background-color: var(--cor-verde-btn);
+    }
 
 main section .cinza {
     color: var(--cor-cinza);
-}
+    }
 
-.progress-color {
-    background-color: var(--cor-verde-btn);
-}
+    form {
+        margin-top: 150px !important;
+    }
 
-form .form-inputs .input {
-    background-color: var(--cor-azul-claro);
-    padding: .7rem;
-    border-radius: 10px;
-    color: #fff;
-}
+    .input {
+        background-color: var(--cor-azul-claro);
+        padding: .7rem;
+        border-radius: 10px;
+        color: #fff;
+        transition: background .3s;
+        }
+        .input:hover {
+            cursor: pointer;
+            opacity: 0.9;   
+        }
 
 .botoes {
     display: flex;
     justify-content: center;
     gap: 2rem;
     margin-bottom: 150px !important;
+    }
+
+    .botoes button {
+        background-color: var(--cor-verde-btn);
+        border: none;
+        border-radius: 75px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 20px;
+        width: 15rem;
+        transition-duration: .3s;
+        padding: .6rem;
+        }
+
+        .botoes button:hover {
+            background-color: #87a100;
+            color: #fff;
+        }
+
+
+    #formulario label {
+        display: block;
+        color: #000;
+        margin-left: 8px;
+        }
+        
+        #formulario div {
+            background-color: #fff;
+            }
+
+            #formulario div input {
+                border: 1px solid var(--cor-azul-claro);
+                border-radius: 10px;
+                width: 20rem;
+                padding: 10px;
+                outline: none;
+                }
+
+                #formulario div input:focus {
+                    box-shadow: 0 0 10px var(--cor-azul-claro);
+                }
+
+
+
+@media (max-width: 600px) {
+    form {
+        margin-top: 0 !important;
+    }
+
+    .botoes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botoes button {
+        padding: 1.5rem;
+        font-size: 20px;
+        width: 20rem;
+    }
 }
 
-.botoes button {
-    background-color: var(--cor-verde-btn);
-    border: none;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 20px;
-    width: 15rem;
-    transition-duration: .3s;
-    padding: .6rem;
+@media (max-width: 912px) {
+    form {
+        margin-top: 0 !important;
+    }
 }
-
-.botoes button:hover {
-    background-color: #87a100;
-    color: #fff;
-}
-
